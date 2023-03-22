@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write something!</title>
+    <style>
+  
+        body {
+            font-size: 1.4em;
+            font-family: monospace;
+            background-color: gainsboro;
+        }
+        .centered-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+
+        input, button, textarea {
+            font-size: 1.1em;
+            font-family: monospace;
+        }
+
+        ul {
+            text-decoration: none;
+            list-style: none;
+            text-align: left;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/answers">to answers</a></li>
+            <li><a href="/">to form</a></li>
+        </ul>
+    </nav>
+    <div class="centered-box" >
+        <br>
+        {% block body %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>

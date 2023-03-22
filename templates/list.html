@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+{% block body %}
+    <span>saved answers:</span>    
+    <br>
+    <ul>
+    {% for title in answers %}
+        <li>
+            <a href="{{title}}">{{title}}</a>
+            <a href="{{delete_link}}{{title}}">✖</a>
+        </li> 
+    {% endfor %}
+    </ul>
+{% endblock %}

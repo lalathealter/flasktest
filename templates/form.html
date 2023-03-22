@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+{% block body %}
+    <form action="/" method="post">
+        <div align="center">
+            <input 
+                placeholder="Theme" 
+                type="text" 
+                name="title" 
+                id="title">
+            <br>
+            <textarea 
+                placeholder="Write your message here" 
+                cols="25" 
+                rows="5" 
+                name="answer" 
+                id="answer"></textarea>
+            <br>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+{% endblock %}
