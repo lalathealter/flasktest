@@ -1,2 +1,3 @@
-answers/
+answers/*
+!answers
 __pycache__/
